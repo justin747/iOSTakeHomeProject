@@ -11,6 +11,8 @@
 		D082683E289B6BE700377314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082683D289B6BE700377314 /* ContentView.swift */; };
 		D0826840289B6BE800377314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D082683F289B6BE800377314 /* Assets.xcassets */; };
 		D0826844289B6BE800377314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0826843289B6BE800377314 /* Preview Assets.xcassets */; };
+		D082684C289B702900377314 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082684B289B702900377314 /* Symbols.swift */; };
+		D082684E289B7B5A00377314 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082684D289B7B5A00377314 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		D082683F289B6BE800377314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0826841289B6BE800377314 /* iOSTakeHomeProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSTakeHomeProject.entitlements; sourceTree = "<group>"; };
 		D0826843289B6BE800377314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D082684B289B702900377314 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		D082684D289B7B5A00377314 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,9 @@
 		D082683A289B6BE700377314 /* iOSTakeHomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				D0826857289B88B200377314 /* Base */,
+				D082684F289B883200377314 /* Features */,
+				D082684A289B6DF300377314 /* Resources */,
 				D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */,
 				D082683D289B6BE700377314 /* ContentView.swift */,
 				D082683F289B6BE800377314 /* Assets.xcassets */,
@@ -67,6 +74,141 @@
 				D0826843289B6BE800377314 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D082684A289B6DF300377314 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D082684B289B702900377314 /* Symbols.swift */,
+				D082684D289B7B5A00377314 /* Theme.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D082684F289B883200377314 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D0826856289B887400377314 /* Settings */,
+				D0826855289B886E00377314 /* Detail */,
+				D0826854289B886800377314 /* Create */,
+				D0826850289B883700377314 /* People */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D0826850289B883700377314 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				D0826853289B884300377314 /* Views */,
+				D0826852289B884100377314 /* Model */,
+				D0826851289B883F00377314 /* View Models */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		D0826851289B883F00377314 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D0826852289B884100377314 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0826853289B884300377314 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0826854289B886800377314 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				D082685A289B894700377314 /* View Models */,
+				D0826859289B894300377314 /* Views */,
+				D0826858289B893E00377314 /* Model */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		D0826855289B886E00377314 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D082685D289B895A00377314 /* View Models */,
+				D082685C289B895600377314 /* Model */,
+				D082685B289B895100377314 /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D0826856289B887400377314 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D082685E289B896100377314 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D0826857289B88B200377314 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D0826858289B893E00377314 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0826859289B894300377314 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D082685A289B894700377314 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D082685B289B895100377314 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D082685C289B895600377314 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D082685D289B895A00377314 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D082685E289B896100377314 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D082684C289B702900377314 /* Symbols.swift in Sources */,
+				D082684E289B7B5A00377314 /* Theme.swift in Sources */,
 				D082683E289B6BE700377314 /* ContentView.swift in Sources */,
 				D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */,
 			);
