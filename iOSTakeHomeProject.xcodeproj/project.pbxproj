@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0314AE128B02ED200032DDE /* UserStaticData in Resources */ = {isa = PBXBuildFile; fileRef = D0314AE028B02ED200032DDE /* UserStaticData */; };
 		D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */; };
 		D082683E289B6BE700377314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082683D289B6BE700377314 /* ContentView.swift */; };
 		D0826840289B6BE800377314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D082683F289B6BE800377314 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0314AE028B02ED200032DDE /* UserStaticData */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserStaticData; sourceTree = "<group>"; };
 		D0826838289B6BE700377314 /* iOSTakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeProjectApp.swift; sourceTree = "<group>"; };
 		D082683D289B6BE700377314 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0314ADD28B02E8300032DDE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D0314AE028B02ED200032DDE /* UserStaticData */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		D082682F289B6BE700377314 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		D082684A289B6DF300377314 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0314ADD28B02E8300032DDE /* JSON */,
 				D082684B289B702900377314 /* Symbols.swift */,
 				D082684D289B7B5A00377314 /* Theme.swift */,
 			);
@@ -271,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0314AE128B02ED200032DDE /* UserStaticData in Resources */,
 				D0826844289B6BE800377314 /* Preview Assets.xcassets in Resources */,
 				D0826840289B6BE800377314 /* Assets.xcassets in Resources */,
 			);
