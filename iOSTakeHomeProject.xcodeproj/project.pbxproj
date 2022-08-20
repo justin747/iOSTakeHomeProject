@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0314AE128B02ED200032DDE /* UserStaticData in Resources */ = {isa = PBXBuildFile; fileRef = D0314AE028B02ED200032DDE /* UserStaticData */; };
+		D0314AE128B02ED200032DDE /* UserStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0314AE028B02ED200032DDE /* UserStaticData.json */; };
+		D0314AE328B0891C00032DDE /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0314AE228B0891C00032DDE /* SingleUserData.json */; };
+		D0314AE528B08DB400032DDE /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0314AE428B08DB400032DDE /* UserDetailResponse.swift */; };
+		D0314AE728B08EFC00032DDE /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0314AE628B08EFC00032DDE /* UsersResponse.swift */; };
 		D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */; };
 		D082683E289B6BE700377314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082683D289B6BE700377314 /* ContentView.swift */; };
 		D0826840289B6BE800377314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D082683F289B6BE800377314 /* Assets.xcassets */; };
@@ -17,7 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D0314AE028B02ED200032DDE /* UserStaticData */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserStaticData; sourceTree = "<group>"; };
+		D0314AE028B02ED200032DDE /* UserStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserStaticData.json; sourceTree = "<group>"; };
+		D0314AE228B0891C00032DDE /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
+		D0314AE428B08DB400032DDE /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
+		D0314AE628B08EFC00032DDE /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
 		D0826838289B6BE700377314 /* iOSTakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeProjectApp.swift; sourceTree = "<group>"; };
 		D082683D289B6BE700377314 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,7 +49,8 @@
 		D0314ADD28B02E8300032DDE /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				D0314AE028B02ED200032DDE /* UserStaticData */,
+				D0314AE028B02ED200032DDE /* UserStaticData.json */,
+				D0314AE228B0891C00032DDE /* SingleUserData.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -129,6 +136,7 @@
 		D0826852289B884100377314 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0314AE628B08EFC00032DDE /* UsersResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 		D082685C289B895600377314 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0314AE428B08DB400032DDE /* UserDetailResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,8 +291,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0314AE128B02ED200032DDE /* UserStaticData in Resources */,
+				D0314AE128B02ED200032DDE /* UserStaticData.json in Resources */,
 				D0826844289B6BE800377314 /* Preview Assets.xcassets in Resources */,
+				D0314AE328B0891C00032DDE /* SingleUserData.json in Resources */,
 				D0826840289B6BE800377314 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +308,9 @@
 				D082684C289B702900377314 /* Symbols.swift in Sources */,
 				D082684E289B7B5A00377314 /* Theme.swift in Sources */,
 				D082683E289B6BE700377314 /* ContentView.swift in Sources */,
+				D0314AE528B08DB400032DDE /* UserDetailResponse.swift in Sources */,
 				D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */,
+				D0314AE728B08EFC00032DDE /* UsersResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
