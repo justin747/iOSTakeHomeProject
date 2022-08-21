@@ -9,7 +9,7 @@ import Foundation
 
 struct UsersResponse: Codable {
     let page, perPage, total, totalPages: Int
-    let data: [Datum]
+    let data: [User]
     let support: Support
 
     enum CodingKeys: String, CodingKey {
