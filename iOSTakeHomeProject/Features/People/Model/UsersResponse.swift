@@ -12,11 +12,5 @@ struct UsersResponse: Codable {
     let data: [User]
     let support: Support
 
-    enum CodingKeys: String, CodingKey {
-        case page
-        case perPage = "per_page"
-        case total
-        case totalPages = "total_pages"
-        case data, support
-    }
+
 }
