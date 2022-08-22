@@ -13,4 +13,6 @@ enum Theme {
     static let detailBackground = Color("detail-background")
     static let text             = Color("text")
     static let pill             = Color("pill")
+    static let pill2            = Color("pill2")
+
 }

@@ -11,8 +11,10 @@
 		D0314AE328B0891C00032DDE /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0314AE228B0891C00032DDE /* SingleUserData.json */; };
 		D0314AE528B08DB400032DDE /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0314AE428B08DB400032DDE /* UserDetailResponse.swift */; };
 		D0314AE728B08EFC00032DDE /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0314AE628B08EFC00032DDE /* UsersResponse.swift */; };
+		D0314AEA28B2F36400032DDE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0314AE928B2F36400032DDE /* Models.swift */; };
+		D0314AED28B2F42500032DDE /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0314AEC28B2F42500032DDE /* StaticJSONMapper.swift */; };
+		D0314AF128B306DD00032DDE /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0314AF028B306DD00032DDE /* PeopleView.swift */; };
 		D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */; };
-		D082683E289B6BE700377314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082683D289B6BE700377314 /* ContentView.swift */; };
 		D0826840289B6BE800377314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D082683F289B6BE800377314 /* Assets.xcassets */; };
 		D0826844289B6BE800377314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0826843289B6BE800377314 /* Preview Assets.xcassets */; };
 		D082684C289B702900377314 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082684B289B702900377314 /* Symbols.swift */; };
@@ -24,9 +26,11 @@
 		D0314AE228B0891C00032DDE /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
 		D0314AE428B08DB400032DDE /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
 		D0314AE628B08EFC00032DDE /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
+		D0314AE928B2F36400032DDE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D0314AEC28B2F42500032DDE /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		D0314AF028B306DD00032DDE /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		D0826838289B6BE700377314 /* iOSTakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeProjectApp.swift; sourceTree = "<group>"; };
-		D082683D289B6BE700377314 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D082683F289B6BE800377314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0826841289B6BE800377314 /* iOSTakeHomeProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSTakeHomeProject.entitlements; sourceTree = "<group>"; };
 		D0826843289B6BE800377314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -55,6 +59,22 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		D0314AE828B2F35700032DDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0314AE928B2F36400032DDE /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0314AEB28B2F40900032DDE /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				D0314AEC28B2F42500032DDE /* StaticJSONMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 		D082682F289B6BE700377314 = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +99,6 @@
 				D082684F289B883200377314 /* Features */,
 				D082684A289B6DF300377314 /* Resources */,
 				D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */,
-				D082683D289B6BE700377314 /* ContentView.swift */,
 				D082683F289B6BE800377314 /* Assets.xcassets */,
 				D0826841289B6BE800377314 /* iOSTakeHomeProject.entitlements */,
 				D0826842289B6BE800377314 /* Preview Content */,
@@ -144,6 +163,7 @@
 		D0826853289B884300377314 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D0314AF028B306DD00032DDE /* PeopleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +199,8 @@
 		D0826857289B88B200377314 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D0314AEB28B2F40900032DDE /* Mapper */,
+				D0314AE828B2F35700032DDE /* Model */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -305,12 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0314AED28B2F42500032DDE /* StaticJSONMapper.swift in Sources */,
 				D082684C289B702900377314 /* Symbols.swift in Sources */,
+				D0314AF128B306DD00032DDE /* PeopleView.swift in Sources */,
 				D082684E289B7B5A00377314 /* Theme.swift in Sources */,
-				D082683E289B6BE700377314 /* ContentView.swift in Sources */,
 				D0314AE528B08DB400032DDE /* UserDetailResponse.swift in Sources */,
 				D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */,
 				D0314AE728B08EFC00032DDE /* UsersResponse.swift in Sources */,
+				D0314AEA28B2F36400032DDE /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
