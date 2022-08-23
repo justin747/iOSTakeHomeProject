@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PeopleView: View {
     
+    @State private var users: [User] = []
+    
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     
     var body: some View {
@@ -19,9 +21,9 @@ struct PeopleView: View {
                 
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
-                        ForEach(0...5, id: \.self) { item in
+                        ForEach(users, id: \.id) { user in
                             
-                            PersonItemView(user: item)
+                            PersonItemView(user: user)
                         }
                     }
                     .padding()
@@ -33,6 +35,15 @@ struct PeopleView: View {
                     
                     create
                     
+                }
+            }
+            .onAppear {
+                do {
+                    let res = try StaticJSONMapper.decode(file: "UserStaticData", type: UsersResponse.self)
+                    users = res.data
+                } catch {
+                    //MARK: - Handle Errors
+                    print(error)
                 }
             }
         }
