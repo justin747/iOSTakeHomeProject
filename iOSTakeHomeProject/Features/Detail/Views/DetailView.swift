@@ -17,8 +17,15 @@ struct DetailView: View {
                 
                 VStack(alignment: .leading, spacing: 18) {
                     
+                    Group {
+                        general
+                        link
+                    }
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 18)
+                    .background(Theme.detailBackground, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                 }
-                
+                .padding()
             }
         }
     }
@@ -37,4 +44,89 @@ private extension DetailView {
         Theme.background
             .ignoresSafeArea(edges: .top)
     }
+    
+    var link: some View {
+        
+        Link(destination: .init(string: "https://google.com")!) {
+            
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Support Reqres")
+                    .foregroundColor(Theme.text)
+                    .font(
+                        .system(.body, design: .rounded)
+                        .weight(.semibold))
+                
+                Text("https://google.com")
+            }
+            
+            Spacer()
+            
+            Symbols
+                .link
+                .font(.system(.title3, design: .rounded))
+        }
+    }
+}
+
+
+//MARK: Refactor This!!
+private extension DetailView {
+    
+    var general: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            
+            PillView(id: 0)
+            
+            Group {
+                firstName
+                lastName
+                email
+            }
+            .foregroundColor(Theme.text)
+        }
+    }
+    
+    @ViewBuilder
+    var firstName: some View {
+        Text("First Name")
+            .font(
+                .system(.body, design: .rounded)
+                .weight(.semibold))
+        
+        
+        Text("<First Name Here>")
+            .font(
+                .system(.subheadline, design: .rounded))
+        
+        Divider()
+    }
+    
+    
+    @ViewBuilder
+    var lastName: some View {
+        Text("Last Name")
+            .font(
+                .system(.body, design: .rounded)
+                .weight(.semibold))
+        
+        Text("<Last Name Here>")
+            .font(
+                .system(.subheadline, design: .rounded))
+        
+        Divider()
+    }
+    
+    
+    @ViewBuilder
+    var email: some View {
+        Text("Email")
+            .font(
+                .system(.body, design: .rounded)
+                .weight(.semibold))
+        
+        Text("<Email Here>")
+            .font(
+                .system(.subheadline, design: .rounded))
+    }
+    
 }
