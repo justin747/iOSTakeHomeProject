@@ -22,8 +22,11 @@ struct PeopleView: View {
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(users, id: \.id) { user in
-                            
-                            PersonItemView(user: user)
+                            NavigationLink {
+                                DetailView()
+                            } label: {
+                                PersonItemView(user: user)
+                            }
                         }
                     }
                     .padding()
