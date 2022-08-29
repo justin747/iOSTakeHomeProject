@@ -32,7 +32,7 @@ struct PeopleView: View {
                     .padding()
                 }
             }
-            .navigationTitle("Peeps")
+            .navigationTitle("People")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     
