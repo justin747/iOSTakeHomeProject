@@ -50,7 +50,7 @@ private extension CreateView {
     }
     
     var firstName: some View {
-        TextField("First Name", text: .constant(""))
+        TextField("First Name", text: .constant("First"))
     }
     
     var lastName: some View {
