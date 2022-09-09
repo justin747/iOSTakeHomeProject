@@ -42,12 +42,17 @@ struct PeopleView: View {
                 }
             }
             .onAppear {
-                do {
-                    let res = try StaticJSONMapper.decode(file: "UserStaticData", type: UsersResponse.self)
-                    users = res.data
-                } catch {
-                    //MARK: - Handle Errors
-                    print(error)
+             
+                NetworkingManager.shared.request("https://reqres.in/api/users", type: UsersResponse.self) { res in
+                    
+                    switch res {
+                        
+                    case .success(let response):
+                        users = response.data
+                        
+                    case .failure(let error):
+                        print(error)
+                    }
                 }
             }
             .sheet(isPresented: $showCreate) {
