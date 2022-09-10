@@ -25,6 +25,7 @@
 		D082684C289B702900377314 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082684B289B702900377314 /* Symbols.swift */; };
 		D082684E289B7B5A00377314 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082684D289B7B5A00377314 /* Theme.swift */; };
 		D0901E0628CC12AA00DC385C /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0528CC12AA00DC385C /* PeopleViewModel.swift */; };
+		D0901E0828CC402E00DC385C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0728CC402E00DC385C /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D082684B289B702900377314 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		D082684D289B7B5A00377314 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D0901E0528CC12AA00DC385C /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		D0901E0728CC402E00DC385C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		D0BF8CF7289EF4EF0045475C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,6 +280,7 @@
 		D082685D289B895A00377314 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				D0901E0728CC402E00DC385C /* DetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			files = (
 				D0314AED28B2F42500032DDE /* StaticJSONMapper.swift in Sources */,
 				D03DC34728B4865F0094307C /* PillView.swift in Sources */,
+				D0901E0828CC402E00DC385C /* DetailViewModel.swift in Sources */,
 				D082684C289B702900377314 /* Symbols.swift in Sources */,
 				D0314AF128B306DD00032DDE /* PeopleView.swift in Sources */,
 				D082684E289B7B5A00377314 /* Theme.swift in Sources */,

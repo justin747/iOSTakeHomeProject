@@ -1,5 +1,5 @@
 //
-//  PeopleViewModel.swift
+//  DetailsViewModel.swift
 //  iOSTakeHomeProject
 //
 //  Created by Justin on 9/9/22.
@@ -7,20 +7,20 @@
 
 import Foundation
 
-final class PeopleViewModel: ObservableObject {
+final class DetailViewModel: ObservableObject {
     
-    @Published private(set) var users: [User] = []
+    @Published private(set) var userInfo: UserDetailResponse?
     
-    func fetchUsers() {
+    func fetchDetail(for id: Int) {
         
-        NetworkingManager.shared.request("https://reqres.in/api/users", type: UsersResponse.self) { [weak self] res in
+        NetworkingManager.shared.request("https://reqres.in/api/users/\(id)", type: UserDetailResponse.self) { [weak self] res in
             
             DispatchQueue.main.async {
                 
                 switch res {
                     
                 case .success(let response):
-                    self?.users = response.data
+                    self?.userInfo = response
                     
                 case .failure(let error):
                     print(error)
