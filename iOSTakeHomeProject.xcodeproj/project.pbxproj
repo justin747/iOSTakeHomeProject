@@ -24,6 +24,7 @@
 		D0826844289B6BE800377314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0826843289B6BE800377314 /* Preview Assets.xcassets */; };
 		D082684C289B702900377314 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082684B289B702900377314 /* Symbols.swift */; };
 		D082684E289B7B5A00377314 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082684D289B7B5A00377314 /* Theme.swift */; };
+		D0901E0628CC12AA00DC385C /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0528CC12AA00DC385C /* PeopleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D0826843289B6BE800377314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D082684B289B702900377314 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		D082684D289B7B5A00377314 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D0901E0528CC12AA00DC385C /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		D0BF8CF7289EF4EF0045475C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 		D0826851289B883F00377314 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				D0901E0528CC12AA00DC385C /* PeopleViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				D0508FA128C9AB0F005FE580 /* NetworkingManager.swift in Sources */,
 				D0314AE728B08EFC00032DDE /* UsersResponse.swift in Sources */,
 				D03DC34428B47F650094307C /* PersonItemView.swift in Sources */,
+				D0901E0628CC12AA00DC385C /* PeopleViewModel.swift in Sources */,
 				D0508F9E28BDC0D1005FE580 /* CreateView.swift in Sources */,
 				D0314AEA28B2F36400032DDE /* Models.swift in Sources */,
 			);
