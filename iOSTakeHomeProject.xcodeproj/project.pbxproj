@@ -26,6 +26,8 @@
 		D082684E289B7B5A00377314 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082684D289B7B5A00377314 /* Theme.swift */; };
 		D0901E0628CC12AA00DC385C /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0528CC12AA00DC385C /* PeopleViewModel.swift */; };
 		D0901E0828CC402E00DC385C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0728CC402E00DC385C /* DetailViewModel.swift */; };
+		D0901E0A28CD6F5E00DC385C /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0928CD6F5E00DC385C /* NewPerson.swift */; };
+		D0901E0C28CD6FD200DC385C /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		D082684D289B7B5A00377314 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D0901E0528CC12AA00DC385C /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		D0901E0728CC402E00DC385C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		D0901E0928CD6F5E00DC385C /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
+		D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		D0BF8CF7289EF4EF0045475C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +246,7 @@
 		D0826858289B893E00377314 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0901E0928CD6F5E00DC385C /* NewPerson.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 		D082685A289B894700377314 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 				D0314AED28B2F42500032DDE /* StaticJSONMapper.swift in Sources */,
 				D03DC34728B4865F0094307C /* PillView.swift in Sources */,
 				D0901E0828CC402E00DC385C /* DetailViewModel.swift in Sources */,
+				D0901E0C28CD6FD200DC385C /* CreateViewModel.swift in Sources */,
 				D082684C289B702900377314 /* Symbols.swift in Sources */,
 				D0314AF128B306DD00032DDE /* PeopleView.swift in Sources */,
 				D082684E289B7B5A00377314 /* Theme.swift in Sources */,
@@ -375,6 +382,7 @@
 				D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */,
 				D0508FA128C9AB0F005FE580 /* NetworkingManager.swift in Sources */,
 				D0314AE728B08EFC00032DDE /* UsersResponse.swift in Sources */,
+				D0901E0A28CD6F5E00DC385C /* NewPerson.swift in Sources */,
 				D03DC34428B47F650094307C /* PersonItemView.swift in Sources */,
 				D0901E0628CC12AA00DC385C /* PeopleViewModel.swift in Sources */,
 				D0508F9E28BDC0D1005FE580 /* CreateView.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 struct CreateView: View {
     
     @Environment(\.dismiss) private var dismiss
+    @StateObject private var vm = CreateViewModel()
     
     var body: some View {
         NavigationView {
@@ -27,7 +28,12 @@ struct CreateView: View {
                 ToolbarItem(placement: .primaryAction) {
                     
                     doneButton
-                
+                    
+                }
+            }
+            .onChange(of: vm.state) { formState in
+                if formState == .successful {
+                    dismiss()
                 }
             }
         }
@@ -50,20 +56,20 @@ private extension CreateView {
     }
     
     var firstName: some View {
-        TextField("First Name", text: .constant(""))
+        TextField("First Name", text: $vm.person.firstName)
     }
     
     var lastName: some View {
-        TextField("Last Name", text: .constant(""))
+        TextField("Last Name", text: $vm.person.lastName)
     }
     
     var job: some View {
-        TextField("Job", text: .constant(""))
+        TextField("Job", text: $vm.person.job)
     }
     
     var submit: some View {
         Button("Submit") {
-            //Button Action
+            vm.create()
         }
     }
 }
