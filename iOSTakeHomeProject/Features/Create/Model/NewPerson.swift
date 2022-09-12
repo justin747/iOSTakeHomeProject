@@ -12,5 +12,6 @@ struct NewPerson: Codable {
     var firstName: String = ""
     var lastName: String = ""
     var job: String = ""
+    var email: String = ""
     
 }
