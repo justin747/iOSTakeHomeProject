@@ -22,11 +22,11 @@ final class NetworkingManager {
             completion(.failure(NetworkingError.invalidURL))
             return
         }
-            
-            
-            
+        
+        
+        
         let request = buildRequest(from: url, methodType: methodType)
-
+        
         
         let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
             
@@ -67,11 +67,11 @@ final class NetworkingManager {
             completion(.failure(NetworkingError.invalidURL))
             return
         }
-            
-            
-            
+        
+        
+        
         let request = buildRequest(from: url, methodType: methodType)
-
+        
         let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
             
             if error != nil {
@@ -93,12 +93,32 @@ final class NetworkingManager {
 
 
 extension NetworkingManager {
-    enum NetworkingError: Error {
+    enum NetworkingError: LocalizedError {
         case invalidURL
         case custom(error: Error)
         case invalidStatusCode(statusCode: Int)
         case invalidData
         case failedToDecode(error: Error)
+    }
+}
+
+extension NetworkingManager.NetworkingError {
+    
+    var errorDescription: String? {
+        
+        switch self {
+            
+        case .invalidURL:
+            return "URL isn't valid"
+        case .invalidStatusCode:
+            return "Status code falls into the wrong range"
+        case . invalidData:
+            return "Response data is invalid"
+        case .failedToDecode:
+            return "Failed to decode"
+        case .custom(let err):
+            return "Something went wrong. \(err.localizedDescription)"
+        }
     }
 }
 

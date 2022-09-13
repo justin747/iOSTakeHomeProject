@@ -41,6 +41,9 @@ struct DetailView: View {
             
             vm.fetchDetail(for: userID)
         }
+        .alert(isPresented: $vm.hasError, error: vm.error) {
+            
+        }
     }
 }
 
