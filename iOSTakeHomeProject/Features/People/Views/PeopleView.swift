@@ -12,6 +12,7 @@ struct PeopleView: View {
     @State private var showCreate = false
     @StateObject private var vm = PeopleViewModel()
     
+    
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     
     var body: some View {
@@ -20,17 +21,21 @@ struct PeopleView: View {
                 
                 background
                 
-                ScrollView {
-                    LazyVGrid(columns: columns, spacing: 16) {
-                        ForEach(vm.users, id: \.id) { user in
-                            NavigationLink {
-                                DetailView(userID: user.id)
-                            } label: {
-                                PersonItemView(user: user)
+                if vm.isLoading {
+                    ProgressView()
+                } else {
+                    ScrollView {
+                        LazyVGrid(columns: columns, spacing: 16) {
+                            ForEach(vm.users, id: \.id) { user in
+                                NavigationLink {
+                                    DetailView(userID: user.id)
+                                } label: {
+                                    PersonItemView(user: user)
+                                }
                             }
                         }
+                        .padding()
                     }
-                    .padding()
                 }
             }
             .navigationTitle("People")
