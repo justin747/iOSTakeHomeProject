@@ -84,7 +84,6 @@ private extension PeopleView {
                     .system(.headline, design: .rounded)
                     .bold())
         }
-        
+        .disabled(vm.isLoading)
     }
-    
 }
