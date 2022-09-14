@@ -17,6 +17,7 @@
 		D03D87C128B721170071DB88 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D87C028B721170071DB88 /* DetailView.swift */; };
 		D03DC34428B47F650094307C /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DC34328B47F650094307C /* PersonItemView.swift */; };
 		D03DC34728B4865F0094307C /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DC34628B4865F0094307C /* PillView.swift */; };
+		D04AEFB228D188AD0011B124 /* CheckmarkPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04AEFB128D188AD0011B124 /* CheckmarkPopoverView.swift */; };
 		D0508F9E28BDC0D1005FE580 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0508F9D28BDC0D1005FE580 /* CreateView.swift */; };
 		D0508FA128C9AB0F005FE580 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0508FA028C9AB0F005FE580 /* NetworkingManager.swift */; };
 		D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082683B289B6BE700377314 /* iOSTakeHomeProjectApp.swift */; };
@@ -41,6 +42,7 @@
 		D03D87C028B721170071DB88 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D03DC34328B47F650094307C /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
 		D03DC34628B4865F0094307C /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
+		D04AEFB128D188AD0011B124 /* CheckmarkPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkPopoverView.swift; sourceTree = "<group>"; };
 		D0508F9D28BDC0D1005FE580 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		D0508FA028C9AB0F005FE580 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		D0826838289B6BE700377314 /* iOSTakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D03DC34628B4865F0094307C /* PillView.swift */,
+				D04AEFB128D188AD0011B124 /* CheckmarkPopoverView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04AEFB228D188AD0011B124 /* CheckmarkPopoverView.swift in Sources */,
 				D0314AED28B2F42500032DDE /* StaticJSONMapper.swift in Sources */,
 				D03DC34728B4865F0094307C /* PillView.swift in Sources */,
 				D0901E0828CC402E00DC385C /* DetailViewModel.swift in Sources */,
