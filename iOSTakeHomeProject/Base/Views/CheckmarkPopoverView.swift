@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CheckmarkPopoverView: View {
     var body: some View {
-        Symbo.checkmark
+        Symbol.checkmark
             .font(.system(.largeTitle, design: .rounded).bold())
     }
 }
