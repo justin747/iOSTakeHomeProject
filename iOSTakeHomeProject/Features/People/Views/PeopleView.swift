@@ -10,6 +10,7 @@ import SwiftUI
 struct PeopleView: View {
     
     @State private var showCreate = false
+    @State private var showSuccess = false
     @StateObject private var vm = PeopleViewModel()
     
     
@@ -50,11 +51,28 @@ struct PeopleView: View {
                 vm.fetchUsers()
             }
             .sheet(isPresented: $showCreate) {
-                CreateView()
+                CreateView {
+                    withAnimation(.spring().delay(0.25)) {
+                        self.showSuccess.toggle()
+                    }
+                }
             }
             .alert(isPresented: $vm.hasError, error: vm.error) {
                 Button("Retry") {
                     vm.fetchUsers()
+                }
+            }
+            .overlay {
+                if showSuccess {
+                    CheckmarkPopoverView()
+                        .transition(.scale.combined(with: .opacity))
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                                withAnimation(.spring()) {
+                                    self.showSuccess.toggle()
+                                }
+                            }
+                        }
                 }
             }
         }
