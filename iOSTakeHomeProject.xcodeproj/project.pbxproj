@@ -29,6 +29,7 @@
 		D0901E0828CC402E00DC385C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0728CC402E00DC385C /* DetailViewModel.swift */; };
 		D0901E0A28CD6F5E00DC385C /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0928CD6F5E00DC385C /* NewPerson.swift */; };
 		D0901E0C28CD6FD200DC385C /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */; };
+		D0B2A87B28DAAE86006C6B9F /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87A28DAAE86006C6B9F /* CreateValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		D0901E0728CC402E00DC385C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		D0901E0928CD6F5E00DC385C /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
+		D0B2A87A28DAAE86006C6B9F /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
 		D0BF8CF7289EF4EF0045475C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +212,7 @@
 		D0826854289B886800377314 /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				D0B2A87928DAAE72006C6B9F /* Validator */,
 				D082685A289B894700377314 /* View Models */,
 				D0826859289B894300377314 /* Views */,
 				D0826858289B893E00377314 /* Model */,
@@ -301,6 +304,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D0B2A87928DAAE72006C6B9F /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				D0B2A87A28DAAE86006C6B9F /* CreateValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -389,6 +400,7 @@
 				D0901E0A28CD6F5E00DC385C /* NewPerson.swift in Sources */,
 				D03DC34428B47F650094307C /* PersonItemView.swift in Sources */,
 				D0901E0628CC12AA00DC385C /* PeopleViewModel.swift in Sources */,
+				D0B2A87B28DAAE86006C6B9F /* CreateValidator.swift in Sources */,
 				D0508F9E28BDC0D1005FE580 /* CreateView.swift in Sources */,
 				D0314AEA28B2F36400032DDE /* Models.swift in Sources */,
 			);
