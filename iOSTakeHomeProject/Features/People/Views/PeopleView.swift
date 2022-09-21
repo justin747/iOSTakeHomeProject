@@ -52,6 +52,7 @@ struct PeopleView: View {
             }
             .sheet(isPresented: $showCreate) {
                 CreateView {
+                    haptic(.success)
                     withAnimation(.spring().delay(0.25)) {
                         self.showSuccess.toggle()
                     }

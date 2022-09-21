@@ -30,6 +30,9 @@
 		D0901E0A28CD6F5E00DC385C /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0928CD6F5E00DC385C /* NewPerson.swift */; };
 		D0901E0C28CD6FD200DC385C /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */; };
 		D0B2A87B28DAAE86006C6B9F /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87A28DAAE86006C6B9F /* CreateValidator.swift */; };
+		D0B2A87D28DACA48006C6B9F /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87C28DACA48006C6B9F /* HapticsManager.swift */; };
+		D0B2A87F28DACE67006C6B9F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87E28DACE67006C6B9F /* SettingsView.swift */; };
+		D0B2A88228DAD195006C6B9F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A88128DAD195006C6B9F /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		D0901E0928CD6F5E00DC385C /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		D0B2A87A28DAAE86006C6B9F /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
+		D0B2A87C28DACA48006C6B9F /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		D0B2A87E28DACE67006C6B9F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D0B2A88128DAD195006C6B9F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		D0BF8CF7289EF4EF0045475C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				D082685E289B896100377314 /* Views */,
+				D0B2A87E28DACE67006C6B9F /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -241,10 +248,12 @@
 		D0826857289B88B200377314 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D0B2A88028DAD179006C6B9F /* UserDefaults */,
 				D0508F9F28C9AAEB005FE580 /* API */,
 				D03DC34528B485D20094307C /* Views */,
 				D0314AEB28B2F40900032DDE /* Mapper */,
 				D0314AE828B2F35700032DDE /* Model */,
+				D0B2A87C28DACA48006C6B9F /* HapticsManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -310,6 +319,14 @@
 				D0B2A87A28DAAE86006C6B9F /* CreateValidator.swift */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		D0B2A88028DAD179006C6B9F /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				D0B2A88128DAD195006C6B9F /* UserDefaults.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B2A87F28DACE67006C6B9F /* SettingsView.swift in Sources */,
 				D04AEFB228D188AD0011B124 /* CheckmarkPopoverView.swift in Sources */,
 				D0314AED28B2F42500032DDE /* StaticJSONMapper.swift in Sources */,
 				D03DC34728B4865F0094307C /* PillView.swift in Sources */,
@@ -397,11 +415,13 @@
 				D082683C289B6BE700377314 /* iOSTakeHomeProjectApp.swift in Sources */,
 				D0508FA128C9AB0F005FE580 /* NetworkingManager.swift in Sources */,
 				D0314AE728B08EFC00032DDE /* UsersResponse.swift in Sources */,
+				D0B2A88228DAD195006C6B9F /* UserDefaults.swift in Sources */,
 				D0901E0A28CD6F5E00DC385C /* NewPerson.swift in Sources */,
 				D03DC34428B47F650094307C /* PersonItemView.swift in Sources */,
 				D0901E0628CC12AA00DC385C /* PeopleViewModel.swift in Sources */,
 				D0B2A87B28DAAE86006C6B9F /* CreateValidator.swift in Sources */,
 				D0508F9E28BDC0D1005FE580 /* CreateView.swift in Sources */,
+				D0B2A87D28DACA48006C6B9F /* HapticsManager.swift in Sources */,
 				D0314AEA28B2F36400032DDE /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
