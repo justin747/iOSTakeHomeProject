@@ -33,6 +33,7 @@
 		D0B2A87D28DACA48006C6B9F /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87C28DACA48006C6B9F /* HapticsManager.swift */; };
 		D0B2A87F28DACE67006C6B9F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87E28DACE67006C6B9F /* SettingsView.swift */; };
 		D0B2A88228DAD195006C6B9F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A88128DAD195006C6B9F /* UserDefaults.swift */; };
+		D0DFE62028DC13B5007C9577 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DFE61F28DC13B5007C9577 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		D0B2A87E28DACE67006C6B9F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D0B2A88128DAD195006C6B9F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		D0BF8CF7289EF4EF0045475C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D0DFE61F28DC13B5007C9577 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D0508FA028C9AB0F005FE580 /* NetworkingManager.swift */,
+				D0DFE61F28DC13B5007C9577 /* Endpoint.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				D0B2A88228DAD195006C6B9F /* UserDefaults.swift in Sources */,
 				D0901E0A28CD6F5E00DC385C /* NewPerson.swift in Sources */,
 				D03DC34428B47F650094307C /* PersonItemView.swift in Sources */,
+				D0DFE62028DC13B5007C9577 /* Endpoint.swift in Sources */,
 				D0901E0628CC12AA00DC385C /* PeopleViewModel.swift in Sources */,
 				D0B2A87B28DAAE86006C6B9F /* CreateValidator.swift in Sources */,
 				D0508F9E28BDC0D1005FE580 /* CreateView.swift in Sources */,
