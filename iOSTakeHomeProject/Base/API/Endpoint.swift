@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum Endpoint {
+    
+    case people
+    case detail(id: Int)
+    case create
+    
+}
