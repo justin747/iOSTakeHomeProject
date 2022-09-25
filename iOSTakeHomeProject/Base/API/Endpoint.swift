@@ -11,8 +11,16 @@ enum Endpoint {
     
     case people
     case detail(id: Int)
-    case create
+    case create(submissionData: Data?)
     
+}
+
+extension Endpoint {
+    enum MethodType {
+        
+        case GET
+        case POST(data: Data?)
+    }
 }
 
 
@@ -31,7 +39,19 @@ extension Endpoint {
             
         }
     }
-}
+    
+    var methodType: MethodType {
+        switch self {
+        case .people,
+             .detail:
+            return .GET
+        case .create(let data):
+            return .POST(data: data)
+        }
+            
+        }
+    }
+
 
 
 extension Endpoint {
@@ -41,11 +61,13 @@ extension Endpoint {
         urlComponents.scheme     = "https"
         urlComponents.host       = host
         urlComponents.path       = path
+        
+        
+#if DEBUG
         urlComponents.queryItems = [
-            
-            #if DEBUG
             URLQueryItem(name: "delay", value: "1")
-        ]#endif
+        ]
+#endif
         
         return urlComponents.url
     }
