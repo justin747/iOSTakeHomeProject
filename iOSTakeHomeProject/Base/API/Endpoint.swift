@@ -24,11 +24,11 @@ extension Endpoint {
         
         switch self {
         case .people,
-             .create:
+                .create:
             return "/api/users"
         case .detail(let id):
             return "/api/users/\(id)"
-       
+            
         }
     }
 }
@@ -42,9 +42,11 @@ extension Endpoint {
         urlComponents.host       = host
         urlComponents.path       = path
         urlComponents.queryItems = [
-        
-            URLQueryItem(name: "delay", value: "1")
             
-        ]
+            #if DEBUG
+            URLQueryItem(name: "delay", value: "1")
+        ]#endif
+        
+        return urlComponents.url
     }
 }
