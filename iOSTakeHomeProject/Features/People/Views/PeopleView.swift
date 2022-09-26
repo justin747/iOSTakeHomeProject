@@ -9,9 +9,10 @@ import SwiftUI
 
 struct PeopleView: View {
     
-    @State private var showCreate = false
+    @State private var showCreate  = false
     @State private var showSuccess = false
-    @StateObject private var vm = PeopleViewModel()
+    @State private var hasAppeared = false
+    @StateObject private var vm    = PeopleViewModel()
     
     
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
@@ -46,9 +47,18 @@ struct PeopleView: View {
                     create
                     
                 }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    
+                    refresh
+                    
+                }
             }
             .task {
-                await vm.fetchUsers()
+                if !hasAppeared {
+                    await vm.fetchUsers()
+                    hasAppeared = true
+                }
             }
             .sheet(isPresented: $showCreate) {
                 CreateView {
@@ -104,6 +114,18 @@ private extension PeopleView {
                 .font(
                     .system(.headline, design: .rounded)
                     .bold())
+        }
+        .disabled(vm.isLoading)
+    }
+    
+    var refresh: some View {
+        
+        Button {
+            Task {
+                await vm.fetchUsers()
+            }
+        } label: {
+            Symbols.refresh
         }
         .disabled(vm.isLoading)
     }
