@@ -9,7 +9,7 @@ import Foundation
 
 enum Endpoint {
     
-    case people
+    case people(page: Int)
     case detail(id: Int)
     case create(submissionData: Data?)
     
@@ -43,14 +43,18 @@ extension Endpoint {
     var methodType: MethodType {
         switch self {
         case .people,
-             .detail:
+                .detail:
             return .GET
         case .create(let data):
             return .POST(data: data)
         }
-            
-        }
+        
     }
+    
+    var queryItems: [String, String]? {
+        ["":""]
+    }
+}
 
 
 
