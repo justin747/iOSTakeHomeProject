@@ -29,7 +29,7 @@
 		D0901E0828CC402E00DC385C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0728CC402E00DC385C /* DetailViewModel.swift */; };
 		D0901E0A28CD6F5E00DC385C /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0928CD6F5E00DC385C /* NewPerson.swift */; };
 		D0901E0C28CD6FD200DC385C /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */; };
-		D09346E728E6AAD9006A8A89 /* iOSTakeHomeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09346E628E6AAD9006A8A89 /* iOSTakeHomeProjectTests.swift */; };
+		D09346EF28E6AB3F006A8A89 /* JSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09346EE28E6AB3F006A8A89 /* JSONMapperTests.swift */; };
 		D0B2A87B28DAAE86006C6B9F /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87A28DAAE86006C6B9F /* CreateValidator.swift */; };
 		D0B2A87D28DACA48006C6B9F /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87C28DACA48006C6B9F /* HapticsManager.swift */; };
 		D0B2A87F28DACE67006C6B9F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87E28DACE67006C6B9F /* SettingsView.swift */; };
@@ -73,7 +73,7 @@
 		D0901E0928CD6F5E00DC385C /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		D0901E0B28CD6FD200DC385C /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		D09346E428E6AAD9006A8A89 /* iOSTakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D09346E628E6AAD9006A8A89 /* iOSTakeHomeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeProjectTests.swift; sourceTree = "<group>"; };
+		D09346EE28E6AB3F006A8A89 /* JSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperTests.swift; sourceTree = "<group>"; };
 		D0B2A87A28DAAE86006C6B9F /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
 		D0B2A87C28DACA48006C6B9F /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		D0B2A87E28DACE67006C6B9F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -341,9 +341,17 @@
 		D09346E528E6AAD9006A8A89 /* iOSTakeHomeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				D09346E628E6AAD9006A8A89 /* iOSTakeHomeProjectTests.swift */,
+				D09346ED28E6AB28006A8A89 /* Mapper */,
 			);
 			path = iOSTakeHomeProjectTests;
+			sourceTree = "<group>";
+		};
+		D09346ED28E6AB28006A8A89 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				D09346EE28E6AB3F006A8A89 /* JSONMapperTests.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 		D0B2A87928DAAE72006C6B9F /* Validator */ = {
@@ -494,7 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09346E728E6AAD9006A8A89 /* iOSTakeHomeProjectTests.swift in Sources */,
+				D09346EF28E6AB3F006A8A89 /* JSONMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
