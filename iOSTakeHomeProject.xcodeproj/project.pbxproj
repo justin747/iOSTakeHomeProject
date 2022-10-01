@@ -34,6 +34,7 @@
 		D0B2A87D28DACA48006C6B9F /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87C28DACA48006C6B9F /* HapticsManager.swift */; };
 		D0B2A87F28DACE67006C6B9F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A87E28DACE67006C6B9F /* SettingsView.swift */; };
 		D0B2A88228DAD195006C6B9F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2A88128DAD195006C6B9F /* UserDefaults.swift */; };
+		D0BB269528E8F4120088C52D /* CreateFormValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB269428E8F4120088C52D /* CreateFormValidatorTests.swift */; };
 		D0DFE62028DC13B5007C9577 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DFE61F28DC13B5007C9577 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		D0B2A87C28DACA48006C6B9F /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		D0B2A87E28DACE67006C6B9F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D0B2A88128DAD195006C6B9F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		D0BB269428E8F4120088C52D /* CreateFormValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFormValidatorTests.swift; sourceTree = "<group>"; };
 		D0BF8CF7289EF4EF0045475C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D0DFE61F28DC13B5007C9577 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -341,6 +343,7 @@
 		D09346E528E6AAD9006A8A89 /* iOSTakeHomeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				D0BB269328E8F3D50088C52D /* Form */,
 				D09346ED28E6AB28006A8A89 /* Mapper */,
 			);
 			path = iOSTakeHomeProjectTests;
@@ -368,6 +371,14 @@
 				D0B2A88128DAD195006C6B9F /* UserDefaults.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		D0BB269328E8F3D50088C52D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				D0BB269428E8F4120088C52D /* CreateFormValidatorTests.swift */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BB269528E8F4120088C52D /* CreateFormValidatorTests.swift in Sources */,
 				D09346EF28E6AB3F006A8A89 /* JSONMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
