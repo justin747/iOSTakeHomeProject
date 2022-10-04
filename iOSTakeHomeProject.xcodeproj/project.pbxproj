@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01074F028EBE11B00807138 /* NetworkingEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01074EF28EBE11B00807138 /* NetworkingEndpointTests.swift */; };
 		D0314AE128B02ED200032DDE /* UserStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0314AE028B02ED200032DDE /* UserStaticData.json */; };
 		D0314AE328B0891C00032DDE /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0314AE228B0891C00032DDE /* SingleUserData.json */; };
 		D0314AE528B08DB400032DDE /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0314AE428B08DB400032DDE /* UserDetailResponse.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D01074EF28EBE11B00807138 /* NetworkingEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingEndpointTests.swift; sourceTree = "<group>"; };
 		D0314AE028B02ED200032DDE /* UserStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserStaticData.json; sourceTree = "<group>"; };
 		D0314AE228B0891C00032DDE /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
 		D0314AE428B08DB400032DDE /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
@@ -102,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D01074ED28EBE0DC00807138 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D01074EE28EBE0F000807138 /* Endpoint */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D01074EE28EBE0F000807138 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				D01074EF28EBE11B00807138 /* NetworkingEndpointTests.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
 		D0314ADD28B02E8300032DDE /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +361,7 @@
 		D09346E528E6AAD9006A8A89 /* iOSTakeHomeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				D01074ED28EBE0DC00807138 /* Networking */,
 				D0BB269328E8F3D50088C52D /* Form */,
 				D09346ED28E6AB28006A8A89 /* Mapper */,
 			);
@@ -515,6 +534,7 @@
 			files = (
 				D0BB269528E8F4120088C52D /* CreateFormValidatorTests.swift in Sources */,
 				D09346EF28E6AB3F006A8A89 /* JSONMapperTests.swift in Sources */,
+				D01074F028EBE11B00807138 /* NetworkingEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
